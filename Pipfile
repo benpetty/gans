@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[scripts]
+sync = "pipenv-setup sync --dev"
+
+[dev-packages]
+black = "*"
+pipenv-setup = "~=3.1"
+pytest = "*"
+
+[packages]
+torch = "~=1.6"
+gans = {editable = true, path = "."}
+pyinquirer = "*"
+dataclasses = "*"
+tqdm = "*"
+torchvision = "*"
+matplotlib = "*"
+np = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
